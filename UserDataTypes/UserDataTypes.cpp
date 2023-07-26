@@ -1,17 +1,38 @@
-// CSC195-2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// UserDataTypes.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include "Employee.h"
 #include <iostream>
+using namespace std;
+
+
 
 int main()
 {
-    std::cout << "Hello World!";
-    std::cout << 5;
-    std::cout << '\n';
-    std::cout << 4.2;
-    std::cout << '\n';
-    std::cout << '4.f';
-    std::cout << '\n';
+
+	/*Employee employees[5];
+	unsigned short amount;
+
+	cout << "How many employees:\n";
+	do {
+		cin >> amount;
+
+		if (amount > 5) {
+			cout << "\nToo many employees, please shorten\n";
+		}
+	} while (amount > 5);
+
+	for (int person = 0; person < amount; person++) {
+		cout << "\nEmployee #" << person + 1 << endl;
+
+		employees[person].Read();
+	}
+	for (int person = 0; person < amount; person++) {
+		cout << "\nEmployee #" << person + 1 << endl;
+
+		employees[person].Write();
+	}*/
+
 
 }
 

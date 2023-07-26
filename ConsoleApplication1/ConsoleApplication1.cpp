@@ -1,18 +1,11 @@
-// CSC195-2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!";
-    std::cout << 5;
-    std::cout << '\n';
-    std::cout << 4.2;
-    std::cout << '\n';
-    std::cout << '4.f';
-    std::cout << '\n';
-
+    std::cout << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
