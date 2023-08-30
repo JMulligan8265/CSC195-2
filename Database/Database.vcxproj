@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cfa182de-e49e-4451-8fb3-c3cc9d7b9343}</ProjectGuid>
-    <RootNamespace>Vectors</RootNamespace>
+    <ProjectGuid>{ed4c94ef-0316-43f6-9aa9-9ab86c28997e}</ProjectGuid>
+    <RootNamespace>Database</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Characters.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Enemies.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Players.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector.h" />
+    <ClInclude Include="Characters.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Enemies.h" />
+    <ClInclude Include="Players.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

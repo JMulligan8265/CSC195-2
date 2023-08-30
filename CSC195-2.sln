@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vectors", "Vectors\Vectors.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcxproj", "{932581A6-E740-46A8-B81F-F51345421186}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Database", "Database\Database.vcxproj", "{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{932581A6-E740-46A8-B81F-F51345421186}.Release|x64.Build.0 = Release|x64
 		{932581A6-E740-46A8-B81F-F51345421186}.Release|x86.ActiveCfg = Release|Win32
 		{932581A6-E740-46A8-B81F-F51345421186}.Release|x86.Build.0 = Release|Win32
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Debug|x64.ActiveCfg = Debug|x64
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Debug|x64.Build.0 = Debug|x64
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Debug|x86.ActiveCfg = Debug|Win32
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Debug|x86.Build.0 = Debug|Win32
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Release|x64.ActiveCfg = Release|x64
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Release|x64.Build.0 = Release|x64
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Release|x86.ActiveCfg = Release|Win32
+		{ED4C94EF-0316-43F6-9AA9-9AB86C28997E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
