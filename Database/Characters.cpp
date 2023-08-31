@@ -50,8 +50,73 @@ int Characters::Characters::GetId() {
 }
 
 void Characters::Characters::setId() {
-	nextId++;
+	nextId = id + 1;
 
 }
 
+void Characters::Characters::Read(ifstream& istream) {
+	istream >> id;
+	setId();
 
+	istream >> name;
+
+	istream >> HP;
+
+	istream >> strength;
+
+	istream >> defense;
+
+	istream >> magic;
+
+	istream >> magic_defense;
+
+	istream >> speed;
+
+	istream >> level;
+}
+
+void Characters::Characters::Write(ofstream& ostream) {
+	ostream << id << endl;
+	ostream << name << endl;
+	ostream << HP << endl;
+	ostream << strength << endl;
+	ostream << defense << endl;
+	ostream << magic << endl;
+	ostream << magic_defense << endl;
+	ostream << speed << endl;
+	ostream << level << endl;
+}
+
+void Characters::Characters::setnextId(int id) {
+	nextId = id;
+}
+
+
+namespace Characters {
+	ostream& operator << (ostream& ostream, Characters& character)
+	{
+		character.Write(ostream);
+		return ostream;
+	}
+
+	istream& operator >> (istream& istream, Characters& character) {
+		character.Read(cout, istream);
+		return istream;
+	}
+
+	ifstream& operator >> (ifstream& istream, Characters& character) {
+		character.Read(istream);
+		return istream;
+	}
+	ofstream& operator << (ofstream& ostream, Characters& character) {
+		character.Write(ostream);
+		return ostream;
+	}
+
+	bool operator == (const std::unique_ptr<Characters>& character, const int& id) {
+		return character.get()->GetId() == id;
+	}
+	bool operator == (const std::unique_ptr<Characters>& character, Characters::eType type) {
+		return character.get()->GetType() == type;
+	}
+}

@@ -24,3 +24,17 @@ void Players::Players::Write(std::ostream& ostream) {
 Players::Players::eType Players::Players::GetType() {
 	return eType::PLAYER;
 }
+
+void Players::Players::Read(ifstream& istream) {
+	Characters::Read(istream);
+	istream >> class_title;
+	istream >> weapon;
+	istream >> armor;
+}
+
+void Players::Players::Write(ofstream& ostream) {
+	Characters::Write(ostream);
+	ostream << class_title << endl;
+	ostream << weapon << endl;
+	ostream << armor;
+}

@@ -22,3 +22,17 @@ void Enemies::Enemies::Write(std::ostream& ostream) {
 Enemies::Enemies::eType Enemies::Enemies::GetType() {
 	return eType::ENEMY;
 }
+
+void Enemies::Enemies::Read(ifstream& istream) {
+	Characters::Read(istream);
+	istream >> encounter_chance;
+	istream >> level_range[0];
+	istream >> level_range[1];
+}
+
+void Enemies::Enemies::Write(ofstream& ostream) {
+	Characters::Write(ostream);
+	ostream << encounter_chance << endl;
+	ostream << level_range[0] << endl;
+	ostream << level_range[1];
+}
